@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Application</title>
+</head>
+
+<body>
+    <h1><a href="/">My Application</a></h1>
+    <form action="." method="POST">
+        <div>
+            <label for="Amount">Amount</label><br />
+            <input type="number" name="Amount" id="Amount" />
+        </div>
+        <br />
+        <div>
+            <label for="Period in month">Period in month</label><br />
+            <input type="number" name="Period in month" id="Period in month" />
+        </div>
+        <br />
+        <div>
+            <label for="Rate of interest">Rate of interest</label><br />
+            <input type="float" name="Rate of interest" id="Rate of interest" />
+        </div>
+        <br />
+        <div>
+            <lable for="Period">Choose Period: </lable>
+            <select name="Period" id="Period">
+                <option value="monthly">Monthly</option>
+                <option value="quaterly">Quaterly</option>
+                <option value="half_yearly">Half yearly</option>
+                <option value="yearly">Annualy</option>
+                <!-- <option value="cumulative">cumulative</option> -->
+            </select><br><br>
+        </div>
+        <br />
+        <button type="submit">Submit Form</button>
+        <P>{{i}}</P>
+    </form>
+</body>
+
+</html>
